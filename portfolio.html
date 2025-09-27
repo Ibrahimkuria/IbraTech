@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ibrahim Kuria - Full-Stack Web Developer specializing in React, Tailwind CSS, PHP, and Laravel">
+
+  <title>Ibrahim Kuria | Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed w-full top-0 z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-indigo-600 flex gap-4"><img src="images/Logo.png" class="h-[40px] w-[40px] rounded-full mb-4" alt="">Ibrahim</h1>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+        <li><a href="#services" class="hover:text-indigo-600">Services</a></li>
+        <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+        <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+      <!-- Add this after the desktop nav -->
+    <button class="md:hidden text-2xl">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center px-4">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Ibrahim</h2>
+      <p class="text-lg md:text-2xl mb-6">Full-Stack Web Developer | React, Tailwind & PHP</p>
+      <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">Hire Me</a>
+      <a href="Ibrahim_Kuria_CV_Updated.pdf" download="Ibrahim_Kuria_Resume.pdf"
+        class="px-6 py-3 bg-white text-indigo-600 rounded-lg shadow-md transition">
+        ⬇ Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <img src="images/IMG_20230430_173655_7.jpg" 
+        alt="Ibrahim" 
+        class="rounded-full shadow-2xl h-[400px] w-[400px]">
+      <div>
+        <h3 class="text-3xl font-bold mb-4">About Me</h3>
+        <p class="mb-4">I am a passionate web developer specializing in building modern, responsive websites and web apps using React, Tailwind CSS, PHP, and Laravel.</p>
+        <p>I focus on writing clean, maintainable code and delivering solutions that solve real business problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12">Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">Front-End Development</h4>
+          <p>Responsive websites using React, Tailwind CSS, and JavaScript.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">Back-End Development</h4>
+          <p>Server-side apps with PHP, MySQL, and beginner Laravel support.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">Full-Stack Solutions</h4>
+          <p>End-to-end web apps with smooth UI and robust backend integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-12 text-center">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="slider bg-white rounded-xl shadow overflow-hidden hover:shadow-lg transition">
+        <img src="images/porfolio.png" id="main" alt="Project 1" class="main w-full h-48 object-cover">
+        <div class="flex gap-6 p-6 overflow-x-auto">
+          <img src="images/portfolio1.png" alt="portfolio1" class="thumb h-[50px] cursor-pointer">
+          <img src="images/portfolio2.png" alt="portfolio2" class="thumb h-[50px] cursor-pointer">
+          <img src="images/portfolio3.png" alt="portfolio3" class="thumb h-[50px] cursor-pointer">
+          <img src="images/porfolio.png" alt="portfolio-img" class="thumb h-[50px] cursor-pointer">
+        </div>
+
+        <div class="flex justify-center gap-8 pb-4">
+          <button class="prev px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">◀ Prev</button>
+          <button class="next px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Next ▶</button>
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Portfolio Website</h4>
+          <p class="text-sm mb-3">Responsive personal portfolio built with HTML, CSS, and JS.</p>
+          <a href="#" target="_blank" class="text-indigo-600 font-semibold">Live Demo →</a>
+        </div>
+      </div>
+      <div class="slider bg-white rounded-xl shadow overflow-hidden hover:shadow-lg transition">
+        <img src="images/store-front.png" alt="Project 1" class="main w-full h-48 object-contain">
+        <div class="flex gap-6 p-6 overflow-x-auto">
+          <img src="images/store-pic%201.png" alt="store-pic%201.png" class="thumb h-[50px] shadow">
+          <img src="images/store-pic%202.png" alt="store-pic%201.png" class="thumb h-[50px] shadow">
+          <img src="images/store-pic%203.png" alt="store-pic%201.png" class="thumb h-[50px] shadow">
+          <img src="images/store-front.png" alt="store-pic%201.png" class="thumb h-[50px] shadow">
+
+        </div>
+        <div class="flex justify-center gap-8 pb-4">
+          <button class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">
+            ◀ Prev
+          </button>
+          <button class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">
+            Next ▶
+          </button>
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold text-lg">E-commerce store Website</h4>
+          <p class="text-sm mb-3">Responsive E-commerce store built with HTML, CSS, and JS.</p>
+          <a href="#" target="_blank" class="text-indigo-600 font-semibold">Live Demo →</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden hover:shadow-lg transition">
+        <img src="images/logistics.png" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Logistics firm Landing page</h4>
+          <p class="text-sm mb-3">Interactive Landing page HTML, CSS, and JS.</p>
+          <a href="#" target="_blank" class="text-indigo-600 font-semibold">Live Demo →</a>
+        </div>
+      </div>
+      <!-- Duplicate this card for more projects -->
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12">Skills</h3>
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <span class="bg-white px-4 py-2 rounded-full shadow">HTML5</span>
+        <span class="bg-white px-4 py-2 rounded-full shadow">CSS3</span>
+        <span class="bg-white px-4 py-2 rounded-full shadow">JavaScript</span>
+        <span class="bg-white px-4 py-2 rounded-full shadow">React.js</span>
+        <span class="bg-white px-4 py-2 rounded-full shadow">Tailwind CSS</span>
+        <span class="bg-white px-4 py-2 rounded-full shadow">PHP</span>
+        <span class="bg-white px-4 py-2 rounded-full shadow">Laravel (beginner)</span>
+      </div>
+      <a href="Ibrahim_Kuria_CV_Updated.pdf" download="Ibrahim_Kuria_Resume.pdf"
+        class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 shadow-md transition">
+        ⬇ Download Resume
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 max-w-6xl mx-auto px-6 flex justify-center">
+    <div  class="bg-white shadow p-8 rounded-xl w-full max-w-2xl mx-auto">
+  <h1 class="text-blue-600 underline font-bold text-3xl mb-8 text-center">Reach me through</h1>
+  <p class="text-xl font-semibold">You can reach out to me via the following handles:</p>
+  <ul class="space-y-4 mt-6">
+    
+    <!-- Facebook -->
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=61581230532923" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+        <i class="fab fa-facebook-f text-white bg-blue-600 p-3 rounded-full hover:bg-blue-700 transition"></i>
+        <span>Facebook
+        </span>
+      </a>
+    </li>
+
+    <!-- Email -->
+    <li>
+      <a href="mailto:kuriaibrahim507@gmail.com" class="flex items-center gap-3">
+        <i class="fas fa-envelope text-white bg-red-500 p-3 rounded-full hover:bg-red-600 transition"></i>
+        <span>Email: kuriaibrahim507@gmail.com</span>
+      </a>
+    </li>
+
+    <!-- GitHub -->
+    <li>
+      <a href="https://github.com/IbrahimKuria" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+        <i class="fab fa-github text-white bg-gray-800 p-3 rounded-full hover:bg-black transition"></i>
+        <span>github: Ibrahim Kuria</span>
+      </a>
+    </li>
+
+    <!-- LinkedIn -->
+    <li>
+      <a href="https://www.linkedin.com/in/ibrahim-kuria-530a67352/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+        <i class="fab fa-linkedin-in text-white bg-blue-700 p-3 rounded-full hover:bg-blue-800 transition"></i>
+        <span>linkedin: Ibrahim Kuria</span>
+      </a>
+    </li>
+
+    <!-- X (Twitter) -->
+    <li>
+      <a href="https://twitter.com/KMuiru96678" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+        <i class="fab fa-x-twitter text-white bg-black p-3 rounded-full hover:bg-gray-900 transition"></i>
+        <span>Kuria Muiru</span>
+      </a>
+      
+    </li>
+
+  </ul>
+</div>
+
+
+    
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 Ibrahim Kuria. All Rights Reserved.</p>
+  </footer>
+  <script>
+document.querySelectorAll('.slider').forEach((slider) => {
+  const main = slider.querySelector('.main');
+  const thumbs = slider.querySelectorAll('.thumb');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
+  
+  const images = Array.from(thumbs).map(img => img.src);
+  let current = 0;
+  let autoSlide = setInterval(() => nextImage(), 3000);
+  let resumeTimeout; // holds delayed resume
+
+  function showImage(index) {
+    current = index;
+    main.src = images[current];
+
+    thumbs.forEach(t => {
+      t.classList.remove('ring-2', 'ring-indigo-600', 'opacity-100');
+      t.classList.add('opacity-60');
+    });
+
+    // Highlight active thumb
+    thumbs[current].classList.remove('opacity-60');
+    thumbs[current].classList.add('ring-2', 'ring-indigo-600', 'opacity-100');
+
+    pauseAuto();
+  }
+  
+  function nextImage() {
+    showImage((current + 1) % images.length);
+  }
+
+  function prevImage() {
+    showImage((current - 1 + images.length) % images.length);
+  }
+
+  function pauseAuto() {
+    clearInterval(autoSlide);       // stop autoplay immediately
+    clearTimeout(resumeTimeout);    // cancel any pending resume
+    resumeTimeout = setTimeout(() => {
+      autoSlide = setInterval(() => nextImage(), 3000);
+    }, 5000); // restart only after 5s of no interaction
+  }
+
+  // Attach events
+  thumbs.forEach((thumb, idx) => {
+    thumb.addEventListener('click', () => showImage(idx));
+  });
+  prevBtn.addEventListener('click', prevImage);
+  nextBtn.addEventListener('click', nextImage);
+
+  // Initialize first image
+  showImage(0);
+});
+
+
+</script>
+
+
+</body>
+</html>
